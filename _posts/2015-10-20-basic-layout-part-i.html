@@ -1,0 +1,84 @@
+---
+date: 2015-10-20
+layout: post
+title: "Basic Layout Part I"
+---
+
+<article>
+  <section class="intro">
+    <p>
+    Let's be honest, the blog still looks like crap. BUT there were minor achievments today, like adding these to the blog:
+    </p>
+    <ol>
+      <li>Bootstrap</li>
+      <li>a favicon</li>
+      <li>highlight.js</li>
+    </ol>
+  </section>
+  <section>
+    <h3>1. Adding Bootstrap to Jekyll</h3>
+    <p>So my situation is the following: So far I did not really care about responsive frameworks. I know that the 2 most popular ones are <a href="http://foundation.zurb.com/">ZURB Foundation</a> and <a href="http://getbootstrap.com/">Bootstrap</a>. That's it. So how I am supposed to choose between the two? Here are some bullet points that helped me choose:</p>
+    <ul>
+      <li>My front-end skill is non-existent, so I need the framework to be relatively easy to work with. I think both of these framework are easy to use.</li>
+      <li>Still, I am in need of tutorials, forums. From that point of view, Bootstrap might have an edge.</li>
+    </ul>
+    <p>But then again, I am not an expert of the topic, so I am just going for Bootstrap, because It seems the safer choice for now.</p>
+    <p>Following the instructions <a href="http://getbootstrap.com/getting-started/#download-cdn">here</a>, I added these lines to head.html <i>(./_includes/head.html)</i>:</p>
+    <pre><code>
+      &lt;!-- Latest compiled and minified CSS --&gt;
+      &lt;link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css"&gt;
+      &lt;!-- Optional theme --&gt;
+      &lt;link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css"&gt;
+      &lt;!-- bootstrap.js needs jQuery --&gt;
+      &lt;script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"&gt;&lt;/script&gt;
+      &lt;!-- Latest compiled and minified JavaScript --&gt;
+      &lt;script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"&gt;&lt;/script&gt;
+    </code></pre>
+  </section>
+  <section>
+    <h3>2. favicon</h3>
+    <p>Okay, so I thought adding a favicon to the site would take about a minute.<br>
+    Well I was wrong, it took 10 minutes.<sup>(wut?)</sup><br>
+    Okay let me explain.<br>
+    I thought adding a favicon to the site would mean getting an image, converting it to a proper size(using a tool like: <a href="http://www.favicon-generator.org/">this)</a>, putting it in the root folder named <i>favicon.ico</i>, and then adding these two lines to head.html:</p>
+    <pre><code class="html">
+      &lt;link rel="shortcut icon" href="/favicon.ico" type="image/x-icon"&gt;
+      &lt;link rel="icon" href="/favicon.ico" type="image/x-icon"&gt;
+    </code></pre>
+    <p>Well nope. At least not on Firefox. I tried it on Chrome, it worked just fine. I don't know the exact reasons, but these 2 stackoverflow questions suggest few solutions:</p>
+    <ul>
+      <li><a href="https://stackoverflow.com/questions/30551501/unable-to-set-favicon-using-jekyll-and-github-pages">First one</a></li>
+      <li><a href="https://stackoverflow.com/questions/8616016/favicon-not-displayed-by-firefox-i-know-its-been-asked-10000-times">Second one</a></li>
+    </ul>
+    <p>I went with the "trailing '?'" solution. And that's that, favicon works as expected.</p>
+  </section>
+  <section>
+    <h3>3. highlight.js</h3>
+    <!-- https://stackoverflow.com/questions/2820453/display-html-code-in-html -->
+    <p>Okay so my opinion is that this is the coolest one.<br>
+    You see, the previous code highlights were possible beacuse of <a href="https://highlightjs.org/">highlight.js</a>.<br>
+    It supports 137 languages and 65 styles, which is more than enough for me.
+    To set up highlight.js, I only needed to add these 3 lines to head.html:</p>
+    <pre><code class="html">
+      &lt;link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.9.1/styles/default.min.css"&gt;
+      &lt;script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.9.1/highlight.min.js"&gt;&lt;/script&gt;
+      &lt;script>hljs.initHighlightingOnLoad();&lt;/script&gt;
+    </code></pre>
+    <p>Adding code snippets to html is easy enough:</p>
+    <pre><code class="html">
+      &lt;pre>&lt;code class="ruby"&gt;
+        def hello_highlightJS
+          puts "Welcome to Missing Semicolon!"
+        end
+      &lt;/code&gt;&lt;/pre&gt;
+    </code></pre>
+    <p>The result is:</p>
+    <pre><code class="ruby">
+      def hello_highlightJS
+        puts "Welcome to Missing Semicolon!"
+      end
+    </code></pre>
+    <p>Pretty awesome isn't it?</p>
+  </section>
+  <p><br>_newit</p>
+</article>
