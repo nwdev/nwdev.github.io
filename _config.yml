@@ -10,3 +10,5 @@ github_username:  nwdev
 paginate: 5
 # Build settings
 markdown: kramdown
+sass:
+  sass_dir: css/_sass
