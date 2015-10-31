@@ -1,5 +1,21 @@
 <header class="site-header">
-  <div class="wrapper">
-    <a id="site-title" href="{{ site.baseurl }}/">{{ site.title }}</a>
+  <div class="row">
+    <div class="large-6 columns">
+      <div class="wrapper">
+        <a id="site-title" href="{{ site.baseurl }}/">{{ site.title }}</a>
+      </div>
+    </div>
+    <div class="large-6 columns">
+      <div class="icon-bar two-up navbar">
+        <a class="item" href="{{ site.baseurl }}/">
+          <i class="fa fa-home"></i>
+          <label>Home</label>
+        </a>
+        <a class="item" href="{{ "/about" | prepend: site.baseurl }}">
+          <i class="fa fa-info"></i>
+          <label>About me</label>
+        </a>
+      </div>
+    </div> 
   </div>
 </header>

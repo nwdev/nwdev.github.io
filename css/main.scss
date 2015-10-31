@@ -12,7 +12,48 @@ body	{
 
 	a	{
 		text-decoration: none;
-		color: $link-color;
+		color: $spec-red;
+	}
+
+	a#site-title	{
+		text-transform: uppercase;
+		letter-spacing: 0.1em;
+		font-size: 2.5rem;
+		line-height: 1;
+	}
+
+	a#site-title:hover	{
+		color: $spec-red;
+		background: transparent;
+		font-weight: bold;
+	}
+
+	a:hover, a:focus	{
+		color: $spec-yellow;
+		background: $spec-purple;
+		border-radius: 0.25rem;
+	}
+
+	.navbar	{
+		background: transparent;
+
+		.fa, label 	{
+			color: $spec-red;
+		}
+
+		a.item:hover	{
+
+			background: transparent;
+
+			i	{
+				color: $spec-yellow;
+			}
+
+			label	{
+				color: $spec-red;
+				text-decoration: underline;
+			}
+		}
 	}
 
 	article	{
@@ -33,12 +74,5 @@ body	{
 	code	{
 		font-family: monospace;
 		line-height: 1;
-	}
-
-	#site-title	{
-	text-transform: uppercase;
-	letter-spacing: 0.1em;
-	font-size: 2.5em;
-	margin: 40px 0px 40px 0px;
 	}
 }
