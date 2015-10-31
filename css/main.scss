@@ -19,15 +19,20 @@ body	{
 		padding: 20px 30px;
 		background: $foreground-color;
 		color: $font-color;
-		font-size: 100%;
-		line-height: 160%;
 		text-align: justify;
+
+		p 	{
+			font-size: 125%;
+		}
+
+		ul, ol 	{
+			margin-left: 4rem;
+		}
 	}
 
 	code	{
 		font-family: monospace;
 		line-height: 100%;
-		font-size: 100%;
 	}
 
 	#site-title	{
