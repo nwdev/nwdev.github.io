@@ -11,4 +11,4 @@ paginate: 5
 # Build settings
 markdown: kramdown
 sass:
-  sass_dir: css/_sass
+  sass_dir: css
