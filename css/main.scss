@@ -15,11 +15,19 @@ body	{
 		color: $spec-red;
 	}
 
+	h1	{
+		color: $spec-yellow;
+		background: $spec-purple;
+	}
+
 	a#site-title	{
 		text-transform: uppercase;
 		letter-spacing: 0.1em;
 		font-size: 2.5rem;
 		line-height: 1;
+		margin: 0 auto;
+		max-width: 500px;
+		display: block;
 	}
 
 	a#site-title:hover	{

@@ -1,15 +1,19 @@
 <header class="site-header">
   <div class="row">
-    <div class="large-6 columns">
-      <div class="wrapper">
+    <div class="large-12 columns">
         <a id="site-title" href="{{ site.baseurl }}/">{{ site.title }}</a>
-      </div>
     </div>
-    <div class="large-6 columns">
-      <div class="icon-bar two-up navbar">
+  </div>
+  <div class="row">
+    <div class="large-12 columns">
+      <div class="icon-bar three-up navbar">
         <a class="item" href="{{ site.baseurl }}/">
           <i class="fa fa-home"></i>
           <label>Home</label>
+        </a>
+        <a class="item" href="{{ "/projects" | prepend: site.baseurl }}">
+          <i class="fa fa-terminal"></i>
+          <label>My Projects</label>
         </a>
         <a class="item" href="{{ "/about" | prepend: site.baseurl }}">
           <i class="fa fa-info"></i>
