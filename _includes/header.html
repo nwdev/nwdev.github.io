@@ -1,25 +1,25 @@
-<header class="site-header">
+<header>
   <div class="row">
-    <div class="large-12 columns">
-        <a id="site-title" href="{{ site.baseurl }}/">{{ site.title }}</a>
+    <div class="medium-12 columns medium-centered">
+      <a href="/"><h1>Missing Semicolon</h1></a>
     </div>
   </div>
   <div class="row">
-    <div class="large-12 columns">
-      <div class="icon-bar three-up navbar">
-        <a class="item" href="{{ site.baseurl }}/">
+    <div class="medium-8 medium-centered columns">
+      <div class="icon-bar three-up">
+        <a class="item active" href="/">
           <i class="fa fa-home"></i>
           <label>Home</label>
         </a>
-        <a class="item" href="{{ "/projects" | prepend: site.baseurl }}">
+        <a class="item" href="/projects">
           <i class="fa fa-terminal"></i>
-          <label>My Projects</label>
+          <label>Projects</label>
         </a>
-        <a class="item" href="{{ "/about" | prepend: site.baseurl }}">
+        <a class="item" href="/about">
           <i class="fa fa-info"></i>
-          <label>About me</label>
+          <label>About Me</label>
         </a>
       </div>
-    </div> 
+    </div>
   </div>
 </header>

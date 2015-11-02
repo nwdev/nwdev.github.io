@@ -2,85 +2,85 @@
 ---
 
 @import '_variables';
+@import '_header';
 
 body	{
 
 	background-color: $background-color;
-	max-width: 840px;
-	margin: 40px auto;
-	padding: 20px 20px;
+	font-family: 'Open Sans', sans-serif;
 
-	a	{
-		text-decoration: none;
-		color: $spec-red;
-	}
+	.content	{
+		max-width: 840px;
+		margin: 40px auto;
+		padding: 20px 20px;
 
-	h1	{
-		color: $spec-yellow;
-		background: $spec-purple;
-	}
-
-	a#site-title	{
-		text-transform: uppercase;
-		letter-spacing: 0.1em;
-		font-size: 2.5rem;
-		line-height: 1;
-		margin: 0 auto;
-		max-width: 500px;
-		display: block;
-	}
-
-	a#site-title:hover	{
-		color: $spec-red;
-		background: transparent;
-		font-weight: bold;
-	}
-
-	a:hover, a:focus	{
-		color: $spec-yellow;
-		background: $spec-purple;
-		border-radius: 0.25rem;
-	}
-
-	.navbar	{
-		background: transparent;
-
-		.fa, label 	{
+		a	{
+			text-decoration: none;
 			color: $spec-red;
 		}
 
-		a.item:hover	{
+		a#site-title	{
+			text-transform: uppercase;
+			letter-spacing: 0.1em;
+			font-size: 2.5rem;
+			line-height: 1;
+			margin: 0 auto;
+			max-width: 500px;
+			display: block;
+		}
 
+		a#site-title:hover	{
+			color: $spec-red;
+			background: transparent;
+			font-weight: bold;
+		}
+
+		a:hover, a:focus	{
+			color: $spec-yellow;
+			background: $spec-purple;
+			border-radius: 0.25rem;
+		}
+
+		.navbar	{
 			background: transparent;
 
-			i	{
-				color: $spec-yellow;
-			}
-
-			label	{
+			.fa, label 	{
 				color: $spec-red;
-				text-decoration: underline;
+			}
+
+			a.item:hover	{
+
+				background: transparent;
+
+				i	{
+					color: $spec-yellow;
+				}
+
+				label	{
+					color: $spec-red;
+					text-decoration: underline;
+				}
 			}
 		}
-	}
 
-	article	{
-		padding: 20px 30px;
-		background: $foreground-color;
-		color: $font-color;
-		text-align: justify;
+		article	{
+			padding: 20px 30px;
+			background: $foreground-color;
+			color: $font-color;
+			text-align: justify;
 
-		p 	{
-			font-size: 125%;
+			p 	{
+				font-size: 125%;
+			}
+
+			ul, ol 	{
+				margin-left: 4rem;
+			}
 		}
 
-		ul, ol 	{
-			margin-left: 4rem;
+		code	{
+			font-family: monospace;
+			line-height: 1;
 		}
-	}
-
-	code	{
-		font-family: monospace;
-		line-height: 1;
 	}
 }
