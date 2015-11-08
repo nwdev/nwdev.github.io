@@ -16,17 +16,22 @@ header	{
 		font-size: 350%;
 	}
 
-	.icon-bar	{
+	.row	{
 
-		background: transparent;
+		line-height: 0;
 
-		.item:hover	{
-				background: $hover-tab-color;
-		}
+		.icon-bar	{
 
-		a.active	{
+			background: transparent;
 
-			background: $active-tab-color;
+			.item:hover	{
+					background: $hover-tab-color;
+			}
+
+			a.active	{
+
+				background: $active-tab-color;
+			}
 		}
 	}
 }
